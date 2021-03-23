@@ -7,7 +7,7 @@ body {
   margin: 30px auto;
   padding: 20px;
   border: 1px solid #868f96;
-  border-radius: 5px;
+  border-radius: 5px #868f96;
   box-shadow: 5px 5px 10px #868f96;
 }
 
@@ -16,4 +16,24 @@ h1 {
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #868f96;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
 }
