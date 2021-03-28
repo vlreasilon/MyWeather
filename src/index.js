@@ -3,9 +3,11 @@ let date = new Date(timestamp);
 let hours = date.getHours();
  if (hours < 10) {
     hours = `0${hours}`;
+}
 let minutes = date.getMinutes();
  if (minutes < 10) {
     minutes = `0${minutes}`;
+}
 let days = [
     "Sunday",
     "Monday",
@@ -23,7 +25,6 @@ return `${day} ${hours}:${minutes}`;
 
 
 function displayTemp(response) {
-    console.log(response.data);
     let tempElement = document.querySelector("#currentTemp");
     let cityElement = document.querySelector("#city");
     let descriptionElement = document.querySelector("#description");
@@ -42,7 +43,7 @@ function displayTemp(response) {
 }
 
 
-let apiKey = "80c705941c8c0d5f55e120669c8a73f5"
+let apiKey = "80c705941c8c0d5f55e120669c8a73f5";
 let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemp);
