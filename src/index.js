@@ -31,13 +31,13 @@ function displayTemp(response) {
     let humidityElement = document.querySelector("#humidity");
     let windElement = document.querySelector("#wind");
     let dateElement = document.querySelector("#date");
-    tempElement.innerHTML = math.round 
+    tempElement.innerHTML = Math.round
     (response.deta.main.temp);
     cityElement.innerHTML = response.data.name;
     descriptionElement.innerHTML = response.deta.weather[0].description;
     humidityElement.innerHTML = response.deta.main.humidity;
-    windElement.innerHTML = math.round(response.deta.wind.speed); 
-    dateElement.innerHTML = formatDate(response.data.dt*1000); 
+    windElement.innerHTML = Math.round(response.deta.wind.speed); 
+    dateElement.innerHTML = formatDate(response.data.dt * 1000); 
 
 
 }
