@@ -25,7 +25,7 @@ return `${day} ${hours}:${minutes}`;
 
 
 function displayTemp(response) {
-    let tempElement = document.querySelector("#currentTemp");
+    let tempElement = document.querySelector("#temp");
     let cityElement = document.querySelector("#city");
     let descriptionElement = document.querySelector("#description");
     let humidityElement = document.querySelector("#humidity");
