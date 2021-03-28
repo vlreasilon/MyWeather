@@ -44,6 +44,6 @@ function displayTemp(response) {
 
 
 let apiKey = "80c705941c8c0d5f55e120669c8a73f5";
-let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=tel aviv&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemp);
