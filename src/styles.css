@@ -29,6 +29,10 @@ li {
   line-height: 19px;
 }
 
+footer {
+  font-size: 12px;
+}
+
 .MyWeather {
   max-width: 600px;
   margin: 30px auto;
