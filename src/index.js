@@ -48,7 +48,7 @@ let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${
 axios.get(apiUrl).then(displayTemp);
 }
 
-function  handleSubmit(event){
+function handleSubmit(event){
  event.preventDefault();
  let cityInputElement = document.querySelector("#cityInput");
  search(cityInputElement.value);
@@ -58,5 +58,5 @@ function  handleSubmit(event){
 search("Tel Aviv");
 
 
-let form =document.querySelector("search-form");
+let form = document.querySelector("search-form");
 form.addEventListener("submit", handleSubmit);
