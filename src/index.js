@@ -37,12 +37,14 @@ function displayTemp(response) {
     humidityElement.innerHTML = response.data.main.humidity;
     windElement.innerHTML = Math.round(response.data.wind.speed); 
     dateElement.innerHTML = formatDate(response.data.dt * 1000); 
+    iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 
 
 }
 
 
 let apiKey = "80c705941c8c0d5f55e120669c8a73f5";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=tel aviv&appid=${apiKey}&units=metric`;
+let city = "Tel Aviv";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemp);
