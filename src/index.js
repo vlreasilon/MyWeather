@@ -42,10 +42,22 @@ function displayTemp(response) {
 
 
 }
-
-
+function search(city){
 let apiKey = "80c705941c8c0d5f55e120669c8a73f5";
 let city = "Tel Aviv";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
 axios.get(apiUrl).then(displayTemp);
+}
+
+function  handleSubmit(event){
+ event.preventDefault();
+ let cityInputElement = document.querySelector("#cityInput");
+ search(cityInputElement.value);
+
+}
+
+search("Tel Aviv");
+
+
+let form =document.querySelector("search-form");
+form.addEventListener("submit", handleSubmit);

@@ -14,8 +14,26 @@
 <body>
     <div class="container">
         <div class="MyWeather">
+            <form id="search-form" class="mb-3">
+                <div class="row">
+                    <div class="col-9">
+                <input type="search" 
+                placeholder="Type a city..." 
+                id="cityInput"
+                class="form-control"
+                autocomplete="off"
+                
+                />
+                </div>
+                <div class="col-3">
+            
+                <input type="submit" value="search" class="btn btn-primary w-100"/>
+                </div>
+                </div>
+            
+            </form>
     <h1 class="currentTemp">
-         <span id="temp">°C | °F</span>
+         <span id="temp"> °C | °F </span>
     </h1>
     
     <img src="http://openweathermap.org/img/wn/10d@2x.png"
@@ -27,7 +45,7 @@
     </h2>
     <ul>
         <li class="city">
-            Tel Aviv
+        Tel Aviv-Yafo, Tel Aviv District, Israel
         </li>
         <li >
             Last updated: <span id = "date"></span>
