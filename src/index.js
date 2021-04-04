@@ -31,6 +31,8 @@ function displayTemp(response) {
     let humidityElement = document.querySelector("#humidity");
     let windElement = document.querySelector("#wind");
     let dateElement = document.querySelector("#date");
+
+
     tempElement.innerHTML = Math.round(response.data.main.temp);
     cityElement.innerHTML = response.data.name;
     descriptionElement.innerHTML = response.data.weather[0].description;
@@ -55,8 +57,7 @@ function handleSubmit(event){
 
 }
 
-search("Tel Aviv");
-
-
-let form = document.querySelector("search-form");
+let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+search("Tel Aviv");
