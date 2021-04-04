@@ -12,9 +12,10 @@ li {
   margin: 0;
   padding: 0;
   color: #868f96;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 100;
   line-height: 19px;
+  text-transform: capitalize;
 }
 
 footer {
