@@ -53,9 +53,9 @@
         
     </div>
     
-    <img src="http://openweathermap.org/img/wn/10d@2x.png"
-     alt="clear" 
-      class="float-right"
+    <img src="http://openweathermap.org/img/wn/${
+                forecastDay.weather[0].icon
+              }@2x.png" alt="" width="42" 
       id="icon"/>
     <ul>
         <li id="description"></li>
