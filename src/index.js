@@ -31,6 +31,7 @@ function displayTemp(response) {
     let humidityElement = document.querySelector("#humidity");
     let windElement = document.querySelector("#wind");
     let dateElement = document.querySelector("#date");
+    let iconElement = document.querySelector("#icon");
 
 
     tempElement.innerHTML = Math.round(response.data.main.temp);

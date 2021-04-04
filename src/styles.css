@@ -2,18 +2,6 @@ body {
   font-family: arial, sans-serif;
 }
 
-h1 {
-  font-size: 34px;
-  font-weight: 100;
-  line-height: 28px;
-}
-
-h2 {
-  font-size: 18px;
-  margin-bottom: 0;
-  text-transform: capitalize;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -24,13 +12,25 @@ li {
   margin: 0;
   padding: 0;
   color: #868f96;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 100;
   line-height: 19px;
 }
 
 footer {
   font-size: 12px;
+}
+.currentTemp {
+  font-size: 34px;
+  font-weight: 100;
+  line-height: 28px;
+}
+
+.weatherUnit {
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-transform: capitalize;
 }
 
 .MyWeather {
@@ -43,5 +43,5 @@ footer {
 }
 
 .temp {
-  font-size: 12px;
+  font-size: 20px;
 }
