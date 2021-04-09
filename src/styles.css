@@ -46,3 +46,15 @@ footer {
 .temp {
   font-size: 20px;
 }
+
+.Daily-Forcast {
+}
+
+.Daily-Forcast-Date {
+  font-size: 16px;
+  color: black;
+}
+
+.Daily-Forcast-temp {
+  font-size: 13px;
+}
