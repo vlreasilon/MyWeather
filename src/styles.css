@@ -47,17 +47,17 @@ footer {
   font-size: 20px;
 }
 
-.Daily-Forcast {
+.Daily-Forecast {
   margin-top: 20px;
   text-align: center;
   color: #000;
 }
 
-.Daily-Forcast-Date {
+.Daily-Forecast-Date {
   font-size: 16px;
   color: black;
 }
 
-.Daily-Forcast-temp {
+.Daily-Forecast-temp {
   font-size: 13px;
 }

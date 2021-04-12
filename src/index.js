@@ -21,16 +21,16 @@ let day = days[date.getDay()];
 return `${day} ${hours}:${minutes}`;
 }
 
-function displayForcast {
-    let forcastElement = document.querySelector("#forcast");
+function displayForecast() {
+    let forecastElement = document.querySelector("#forecast");
     let days = ["Sun", "Mon", "Tue", "Wed"];
-    let forcastHTML =` <div class="row">`;
-    days.forEach(function (day){
-        forcastHTML =
-        forcastElement +
+    let forecastHTML =` <div class="row">`;
+    days.forEach(function (day) {
+        forecastHTML =
+        forecastElement +
             `<div class="col-2">
                 <img src="http://openweathermap.org/img/wn/50d@2x.png" alt="" width="42" />
-                <div class="Daily-Forcast-temp">
+                <div class="Daily-Forecast-temp">
                     <span class="Temp-Max">
                         22°
                     </span>
@@ -39,7 +39,7 @@ function displayForcast {
                     </span>
                      
                 </div>
-                <div class="Daily-Forcast-Date">
+                <div class="Daily-Forecast-Date">
                     Sun
 
                 </div>
@@ -48,9 +48,9 @@ function displayForcast {
             </div>`;
 
 });
-forcastHTML = forcastHTML + `</div>`;
-forcastElement.innerHTML = forcastHTML;
-console.log(forcastHTML);
+forecastHTML = forecastHTML + `</div>`;
+forecastElement.innerHTML = forecastHTML;
+console.log(forecastHTML);
 }
 
 
