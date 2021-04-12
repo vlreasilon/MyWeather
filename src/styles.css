@@ -48,6 +48,9 @@ footer {
 }
 
 .Daily-Forcast {
+  margin-top: 20px;
+  text-align: center;
+  color: #000;
 }
 
 .Daily-Forcast-Date {

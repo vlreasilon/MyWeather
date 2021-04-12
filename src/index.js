@@ -21,7 +21,37 @@ let day = days[date.getDay()];
 return `${day} ${hours}:${minutes}`;
 }
 
+function displayForcast {
+    let forcastElement = document.querySelector("#forcast");
+    let days = ["Sun", "Mon", "Tue", "Wed"];
+    let forcastHTML =` <div class="row">`;
+    days.forEach(function (day){
+        forcastHTML =
+        forcastElement +
+            `<div class="col-2">
+                <img src="http://openweathermap.org/img/wn/50d@2x.png" alt="" width="42" />
+                <div class="Daily-Forcast-temp">
+                    <span class="Temp-Max">
+                        22°
+                    </span>
+                    <span class="Temp-Min">
+                        11°
+                    </span>
+                     
+                </div>
+                <div class="Daily-Forcast-Date">
+                    Sun
 
+                </div>
+                
+
+            </div>`;
+
+});
+forcastHTML = forcastHTML + `</div>`;
+forcastElement.innerHTML = forcastHTML;
+console.log(forcastHTML);
+}
 
 
 function displayTemp(response) {
