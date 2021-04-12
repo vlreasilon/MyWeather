@@ -40,7 +40,7 @@ function displayForecast() {
                      
                 </div>
                 <div class="Daily-Forecast-Date">
-                    Sun
+                    ${day}
 
                 </div>
                 
